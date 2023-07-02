@@ -1,0 +1,67 @@
+pared 15,01
+pared 15,02
+pared 15,03
+pared 15,04
+pared 15,05
+pared 16,01
+pared 16,05
+pared 17,00
+pared 17,01
+pared 17,03
+pared 17,05
+pared 18,00
+pared 18,05
+pared 19,00
+pared 19,05
+pared 20,00
+pared 20,01
+pared 20,03
+pared 20,04
+pared 20,05
+pared 21,01
+pared 21,05
+pared 22,01
+pared 22,05
+pared 23,01
+pared 23,02
+pared 23,03
+pared 23,04
+pared 23,05
+
+
+
+
+suelo 16,02
+suelo 16,03
+suelo 16,04
+suelo 17,02
+suelo 17,04
+suelo 18,01
+suelo 18,02
+suelo 18,03
+suelo 18,04
+suelo 19,01
+suelo 19,02
+suelo 19,03
+suelo 19,04
+suelo 20,02
+suelo 21,02
+suelo 21,03
+suelo 21,04
+suelo 22,02
+suelo 22,03
+suelo 22,04
+
+
+
+objetivo 17,04
+objetivo 19,04
+
+
+
+caja 21,02
+caja 21,03
+
+
+
+jugador 21,04
