@@ -1,4 +1,4 @@
-#     SOLUCIONES DE CADA NIVEL
+#     SOLUCIONARIO
 
 <br>
 
