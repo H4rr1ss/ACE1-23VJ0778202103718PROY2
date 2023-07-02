@@ -86,9 +86,9 @@ Start:
     jmp Intro
 
 Intro:
-    mPrint 02h,08h,univ,21h
-    mPrint 02h,08h+2,facu,21h
-    mPrint 02h,08h+4,escu,21h
+    mPrint 01h,08h,univ,21h
+    mPrint 01h,08h+2,facu,21h
+    mPrint 01h,08h+4,escu,21h
     mPrint 00h,BOTTOM_LINE,datosEstudiante,08h
     mov AH,86h      ; wait CX:DX microsegundos 
     mov CX, 64h
