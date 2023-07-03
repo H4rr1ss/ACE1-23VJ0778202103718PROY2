@@ -90,12 +90,13 @@ Intro:
     mPrint 01h,08h+2,facu,21h
     mPrint 01h,08h+4,escu,21h
     mPrint 00h,BOTTOM_LINE,datosEstudiante,08h
-    mov AH,86h      ; wait CX:DX microsegundos 
+    ; se utiliza como delay
+    mov AH,86h      
     mov CX, 64h
-    mov DX, 1E84h   ; 1E8480 -> 2 millones us (2 segundos)
+    mov DX, 1E84h  
     int 15h 
 
-    call iniciarVideo  ; usandolo como clear screen xd
+    call iniciarVideo  
     jmp MainMenu
 
 MainMenu:
@@ -109,19 +110,19 @@ MainMenu:
 MenuLoop:
     jmp GetKeyMenu
 
-; leer los teclazos en el menú
+; leer los teclazos
 GetKeyMenu:
-    mov AH,12h ;test Control/Shift (resultado en AX)
+    mov AH,12h 
     int 16h
-    mov BX,AX ; guardar AX
+    mov BX,AX 
 
-    mov AH,10h ; Leer teclado (espera input) en AX -> AH : Scan Code , AL : ASCII
+    mov AH,10h 
     int 16h
 
 CheckMenuKey:
-    cmp AH,UP_KEY  ; flecha arriba
+    cmp AH,UP_KEY  
     je CheckArrowUpMenu
-    cmp AH,DOWN_KEY  ; flecha abajo
+    cmp AH,DOWN_KEY  
     je CheckArrowDownMenu
     cmp AH,F_1
     je MenuSelected
@@ -205,7 +206,7 @@ GameLoop:
     call GetTime
     mov ah,11h
     int 16h
-    jz GameLoop ; si no se presiona nada
+    jz GameLoop 
     ;call RenderTiles
     mov V_DESP,00h
     call PlayerSteppingOn
@@ -240,7 +241,6 @@ GameLoop:
 
     jmp GameLoop
 
-; SI:Sprite DH:posX (columna) DL:posY (linea) 
 ; Renderiza el sprite en una posición Columna,Fila (40x25)
 RenderSprite:		
     push ES
@@ -260,9 +260,7 @@ RenderSprite:
     add BL,DL
     mul BX
     add DI,AX
-
 	pop DX
-	
 	mov CL,08h			;Altura 8px
 DrawY:
 	push DI

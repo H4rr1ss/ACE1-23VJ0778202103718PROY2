@@ -1,19 +1,19 @@
-; mueve el cursor a una posición
+; hace un movimiento en el cursor
 moverCursor MACRO xpos,ypos
-    mov AH,02h  ; establecer la posición del cursor
-    mov BH,00h  ; número de página, sólo utilizaremos la 0
-    mov DH,ypos ; fila 
-    mov DL,xpos ; columna
+    mov AH,02h  
+    mov BH,00h  
+    mov DH,ypos 
+    mov DL,xpos 
     int 10h
 ENDM
 
 getCursorPos MACRO
-    mov AH,03h  ; get posicions del cursor; DH: row , DL: col
-    mov BH,0h   ; en modo gráfico
+    mov AH,03h 
+    mov BH,0h   
     int 10h
 ENDM
 
-; Para imprimir una cadena de texto en una posición definida
+; Imprime una cadena en la posicion que se le coloque
 mPrint MACRO xpos, ypos, stringbuffer, color
     push SI
     moverCursor xpos,ypos

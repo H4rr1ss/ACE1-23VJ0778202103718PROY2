@@ -2,15 +2,26 @@
 
 <br>
 
-## **Introducción** 📑
+## **INTRODUCCIÓN** 📑
 
 Con la finalidad de la implementación del lenguaje ensamblador, el curso arquitectura de computadores y ensambladores 1 se llevó a cabo el juego japonés Sokoban, en el cual el jugador tiene como principal objetivo empujar una serie de pescados hasta conseguir que éstos se ubiquen en ciertas posiciones. Cuando el jugador consigue lo anterior se le permite avanzar de nivel y acumular más puntos.
+
+<br>
 
 ___
 
 <br>
 
-## **DESCRIPCION DEL SISTEMA** 📄
+## **DESCRIPCION DEL JUEGO** 📄
+Sokoban es un juego de rompecabezas que se centra en la lógica y la planificación estratégica. El objetivo principal es empujar cajas o bloques hacia ubicaciones específicas en un escenario de juego. El jugador controla un personaje que puede moverse en cuatro direcciones: arriba, abajo, izquierda y derecha.
+
+El escenario del juego está compuesto por una cuadrícula en la que hay diferentes elementos, como paredes, espacios vacíos, cajas y ubicaciones objetivo. El jugador debe empujar las cajas una a la vez, sin tirarlas ni arrastrarlas, para colocarlas en las ubicaciones objetivo.
+
+El desafío radica en que las cajas solo se pueden mover una posición a la vez y no se pueden empujar si hay un obstáculo, como una pared o otra caja, bloqueando su camino. Esto significa que el jugador necesita planificar cuidadosamente cada movimiento para evitar quedar atrapado o bloquear una caja en una posición inaccesible.
+
+<br>
+
+___
 
 <br>
 
